@@ -144,11 +144,145 @@ const Hero = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.5, duration: 0.8 }}
         >
-          <div className="image-wrapper">
-            <div className="glow-circle"></div>
-            <div className="avatar-placeholder">
-              <span className="avatar-text">AA</span>
+          <div className="tech-animation-container">
+            {/* Horizontal Scrolling Text Streams */}
+            <div className="text-stream stream-1">
+              <div className="stream-content">
+                <span>GenAI</span>
+                <span>LLM</span>
+                <span>RAG</span>
+                <span>Transformers</span>
+                <span>NLP</span>
+                <span>Deep Learning</span>
+                <span>Neural Networks</span>
+                <span>AWS Bedrock</span>
+                <span>OpenAI</span>
+                <span>Claude</span>
+              </div>
+              <div className="stream-content">
+                <span>GenAI</span>
+                <span>LLM</span>
+                <span>RAG</span>
+                <span>Transformers</span>
+                <span>NLP</span>
+                <span>Deep Learning</span>
+                <span>Neural Networks</span>
+                <span>AWS Bedrock</span>
+                <span>OpenAI</span>
+                <span>Claude</span>
+              </div>
             </div>
+
+            <div className="text-stream stream-2">
+              <div className="stream-content">
+                <span>TensorFlow</span>
+                <span>PyTorch</span>
+                <span>Keras</span>
+                <span>React</span>
+                <span>Node.js</span>
+                <span>Python</span>
+                <span>TypeScript</span>
+                <span>Docker</span>
+                <span>Kubernetes</span>
+                <span>GraphQL</span>
+              </div>
+              <div className="stream-content">
+                <span>TensorFlow</span>
+                <span>PyTorch</span>
+                <span>Keras</span>
+                <span>React</span>
+                <span>Node.js</span>
+                <span>Python</span>
+                <span>TypeScript</span>
+                <span>Docker</span>
+                <span>Kubernetes</span>
+                <span>GraphQL</span>
+              </div>
+            </div>
+
+            <div className="text-stream stream-3">
+              <div className="stream-content">
+                <span>Agentic AI</span>
+                <span>ML Ops</span>
+                <span>Vector DB</span>
+                <span>LangChain</span>
+                <span>Embeddings</span>
+                <span>Fine-tuning</span>
+                <span>RLHF</span>
+                <span>Prompt Eng</span>
+                <span>Diffusion</span>
+                <span>GPT-4</span>
+              </div>
+              <div className="stream-content">
+                <span>Agentic AI</span>
+                <span>ML Ops</span>
+                <span>Vector DB</span>
+                <span>LangChain</span>
+                <span>Embeddings</span>
+                <span>Fine-tuning</span>
+                <span>RLHF</span>
+                <span>Prompt Eng</span>
+                <span>Diffusion</span>
+                <span>GPT-4</span>
+              </div>
+            </div>
+
+            <div className="text-stream stream-4">
+              <div className="stream-content">
+                <span>Azure AI</span>
+                <span>AWS Lambda</span>
+                <span>S3</span>
+                <span>DynamoDB</span>
+                <span>MongoDB</span>
+                <span>PostgreSQL</span>
+                <span>Redis</span>
+                <span>Elasticsearch</span>
+                <span>Kafka</span>
+                <span>Serverless</span>
+              </div>
+              <div className="stream-content">
+                <span>Azure AI</span>
+                <span>AWS Lambda</span>
+                <span>S3</span>
+                <span>DynamoDB</span>
+                <span>MongoDB</span>
+                <span>PostgreSQL</span>
+                <span>Redis</span>
+                <span>Elasticsearch</span>
+                <span>Kafka</span>
+                <span>Serverless</span>
+              </div>
+            </div>
+
+            <div className="text-stream stream-5">
+              <div className="stream-content">
+                <span>Computer Vision</span>
+                <span>Stable Diff</span>
+                <span>DALL-E</span>
+                <span>Gemini</span>
+                <span>Scikit-learn</span>
+                <span>Pandas</span>
+                <span>NumPy</span>
+                <span>REST API</span>
+                <span>Microservices</span>
+                <span>CI/CD</span>
+              </div>
+              <div className="stream-content">
+                <span>Computer Vision</span>
+                <span>Stable Diff</span>
+                <span>DALL-E</span>
+                <span>Gemini</span>
+                <span>Scikit-learn</span>
+                <span>Pandas</span>
+                <span>NumPy</span>
+                <span>REST API</span>
+                <span>Microservices</span>
+                <span>CI/CD</span>
+              </div>
+            </div>
+
+            {/* Center Glow Effect */}
+            <div className="center-glow"></div>
           </div>
         </motion.div>
       </div>
