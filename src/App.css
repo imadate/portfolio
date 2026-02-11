@@ -81,7 +81,7 @@ html {
 
 /* Section Styling */
 section {
-  min-height: 100vh;
+  min-height: 50vh;
   padding: 100px 20px;
   position: relative;
   display: flex;

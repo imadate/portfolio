@@ -58,7 +58,7 @@ const About = () => {
           >
             <h3 className="gradient-text">Who I Am</h3>
             <p>
-              I'm a <strong>Senior Full-stack & AI Engineer</strong> with over <strong>5 years of experience</strong> 
+              I'm a <strong>Senior Full-stack & AI Engineer</strong> with over <strong>5 years of experience </strong> 
               building secure, scalable, and cloud-native applications. My expertise spans across 
               <strong> Node.js, React, Python, AWS, Azure</strong>, and cutting-edge <strong>Generative AI</strong> technologies.
             </p>
