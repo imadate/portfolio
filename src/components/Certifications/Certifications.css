@@ -1,0 +1,136 @@
+.certifications {
+  background: var(--bg-secondary);
+  position: relative;
+}
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 80px;
+}
+
+.certification-card {
+  text-align: center;
+  padding: 40px 25px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cert-icon {
+  font-size: 56px;
+  color: var(--accent-primary);
+  margin-bottom: 20px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.cert-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+  line-height: 1.4;
+}
+
+.cert-issuer {
+  font-size: 15px;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+.cert-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 20px;
+  background: var(--accent-gradient);
+  color: var(--text-primary);
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.cert-badge span {
+  font-size: 16px;
+}
+
+.education-section {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.education-section h3 {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 50px;
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.education-card {
+  padding: 35px 30px;
+  text-align: left;
+}
+
+.education-card h4 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--accent-primary);
+  margin-bottom: 12px;
+}
+
+.university {
+  font-size: 16px;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.period {
+  font-size: 14px;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .certifications-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .certification-card {
+    padding: 30px 20px;
+  }
+
+  .cert-icon {
+    font-size: 48px;
+  }
+
+  .cert-title {
+    font-size: 18px;
+  }
+
+  .education-section h3 {
+    font-size: 28px;
+  }
+
+  .education-card {
+    padding: 25px 20px;
+  }
+
+  .education-card h4 {
+    font-size: 20px;
+  }
+}

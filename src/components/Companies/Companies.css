@@ -1,0 +1,176 @@
+.companies {
+  background: var(--bg-primary);
+  position: relative;
+  overflow: hidden;
+}
+
+.companies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  margin-bottom: 80px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.company-card {
+  text-align: center;
+  padding: 50px 30px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.company-logo {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 25px;
+  background: var(--card-bg);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid var(--company-color, var(--accent-primary));
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.company-card:hover .company-logo {
+  transform: rotateY(360deg);
+  box-shadow: 0 15px 50px var(--company-color, var(--glow-color));
+}
+
+.logo-emoji {
+  font-size: 56px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.company-name {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: var(--text-primary);
+}
+
+.company-description {
+  font-size: 16px;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.company-shine {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.1) 50%,
+    transparent 70%
+  );
+  transform: rotate(45deg);
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+.company-card:hover .company-shine {
+  opacity: 1;
+  animation: shine 1.5s ease-in-out;
+}
+
+@keyframes shine {
+  0% {
+    top: -50%;
+    left: -50%;
+  }
+  100% {
+    top: 150%;
+    left: 150%;
+  }
+}
+
+/* Marquee Animation */
+.companies-marquee {
+  margin-top: 60px;
+  padding: 30px 0;
+  background: var(--card-bg);
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+}
+
+.marquee-content {
+  display: flex;
+  animation: marquee 20s linear infinite;
+  gap: 60px;
+}
+
+.marquee-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+
+.marquee-logo {
+  font-size: 32px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-content:hover {
+  animation-play-state: paused;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .companies-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .company-card {
+    padding: 40px 20px;
+  }
+
+  .company-logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .logo-emoji {
+    font-size: 48px;
+  }
+
+  .company-name {
+    font-size: 24px;
+  }
+
+  .company-description {
+    font-size: 14px;
+  }
+
+  .marquee-item {
+    font-size: 18px;
+  }
+
+  .marquee-logo {
+    font-size: 28px;
+  }
+}
