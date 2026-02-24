@@ -1242,9 +1242,18 @@
 
   .tech-animation-container {
     width: 100%;
-    max-width: 450px;
+    max-width: 90vw;
     height: 400px;
     margin: 0 auto;
+  }
+
+  .text-stream span {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+
+  .stream-content {
+    gap: 30px;
   }
 
   .hero-name {
