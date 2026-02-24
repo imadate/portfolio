@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import resumePDF from '../../assets/resume/Akshay-Adate.pdf';
 import { 
   FaEnvelope, FaLinkedin, FaYoutube, FaMapMarkerAlt, 
   FaPhone, FaGithub, FaDownload 
@@ -55,9 +56,10 @@ const Contact = () => {
   ];
 
   const downloadResume = () => {
+    // Create resume download link
     const link = document.createElement('a');
-    link.href = '/resume.pdf';
-    link.download = 'Akshay_Adate_Resume.pdf';
+    link.href = resumePDF;
+    link.download = 'Akshay-Adate.pdf';
     link.click();
   };
 

@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Prompt Engineering Certificate",
+    "issuer": "LinkedIn Learning",
+    "date": "2025",
+    "credentialUrl": "https://www.linkedin.com/learning/certificates/c7af266b440e77d4f62588f7d09e2802ab39b8889453cb6b4e35431f39492f4d?accountId=2063396&u=2063396&success=true&authUUID=Bc6MnVx5S2KGPp0P5%2BTIXw%3D%3D",
+    "icon": "certificate"
+  },
+  {
+    "id": 2,
+    "title": "Generative AI Fundamentals Certificate",
+    "issuer": "Databricks",
+    "date": "2025",
+    "credentialUrl": "https://credentials.databricks.com/5bb64775-bb28-4213-8f66-84558b58d964#acc.PDRpjFE1",
+    "icon": "certificate"
+  },
+  {
+    "id": 3,
+    "title": "AWS Bedrock Certificate",
+    "issuer": "LinkedIn Learning",
+    "date": "2025",
+    "credentialUrl": "https://www.linkedin.com/learning/certificates/7d3c70a1082dc8f81f787c047acc7faed895847ae2da3a3a4e75018c87bc0b2f?u=2063396",
+    "icon": "award"
+  },
+  {
+    "id": 4,
+    "title": "Docker Foundation Professional Certificate",
+    "issuer": "Skillsoft",
+    "date": "2025",
+    "credentialUrl": "https://skillsoft.digitalbadges.skillsoft.com/f0b027f8-4a57-48eb-a4db-260e8e4b2c25#acc.fWSXlGOL",
+    "icon": "certificate"
+  },
+  {
+    "id": 5,
+    "title": "Contact Center AI Specialization",
+    "issuer": "Google Cloud",
+    "date": "2022",
+    "credentialUrl": "https://partner.skills.google/public_profiles/46dba965-0f79-47e7-8849-154e4986acf7/badges/1139708",
+    "icon": "award"
+  },
+  {
+    "id": 6,
+    "title": "PL-300: Preparing Data for Visualizations in Power BI",
+    "issuer": "Professional Certification",
+    "date": "2024",
+    "credentialUrl": "https://skillsoft.digitalbadges.skillsoft.com/f0b027f8-4a57-48eb-a4db-260e8e4b2c25#acc.qrDFeYpT",
+    "icon": "certificate"
+  }
+]

@@ -15,6 +15,17 @@
   padding: 40px 25px;
   position: relative;
   overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certification-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(var(--accent-rgb), 0.3);
+}
+
+.certification-card:hover .cert-link-indicator {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .cert-icon {
@@ -52,6 +63,24 @@
 
 .cert-badge span {
   font-size: 16px;
+}
+
+.cert-link-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 15px;
+  font-size: 14px;
+  color: var(--accent-primary);
+  font-weight: 600;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.cert-link-indicator svg {
+  font-size: 12px;
 }
 
 .education-section {

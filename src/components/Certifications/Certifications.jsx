@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { FaCertificate, FaAward } from 'react-icons/fa';
+import { FaCertificate, FaAward, FaExternalLinkAlt } from 'react-icons/fa';
 import './Certifications.css';
+import certificatesData from '../../assets/certificates/certificates.json';
 
 const Certifications = () => {
   const [ref, inView] = useInView({
@@ -9,33 +10,9 @@ const Certifications = () => {
     threshold: 0.2,
   });
 
-  const certifications = [
-    {
-      title: 'Prompt Engineering Certificate',
-      issuer: 'Professional Certification',
-      icon: <FaCertificate />,
-    },
-    {
-      title: 'Generative AI Fundamentals Certificate',
-      issuer: 'AI & ML Certification',
-      icon: <FaCertificate />,
-    },
-    {
-      title: 'AWS Bedrock Certificate',
-      issuer: 'Amazon Web Services',
-      icon: <FaAward />,
-    },
-    {
-      title: 'Docker Foundation Professional Certificate',
-      issuer: 'Docker Inc.',
-      icon: <FaCertificate />,
-    },
-    {
-      title: 'Contact Center AI Specialization',
-      issuer: 'Google Cloud',
-      icon: <FaAward />,
-    },
-  ];
+  const handleCertificateClick = (url) => {
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
 
   return (
     <section id="certifications" className="certifications" ref={ref}>
@@ -55,20 +32,27 @@ const Certifications = () => {
         </motion.div>
 
         <div className="certifications-grid">
-          {certifications.map((cert, index) => (
+          {certificatesData.map((cert, index) => (
             <motion.div
-              key={index}
+              key={cert.id}
               className="certification-card card"
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: index * 0.1, duration: 0.5 }}
               whileHover={{ y: -10 }}
+              onClick={() => handleCertificateClick(cert.credentialUrl)}
+              style={{ cursor: 'pointer' }}
             >
-              <div className="cert-icon">{cert.icon}</div>
+              <div className="cert-icon">
+                {cert.icon === 'award' ? <FaAward /> : <FaCertificate />}
+              </div>
               <h3 className="cert-title">{cert.title}</h3>
               <p className="cert-issuer">{cert.issuer}</p>
               <div className="cert-badge">
                 <span>✓</span> Certified
+              </div>
+              <div className="cert-link-indicator">
+                <FaExternalLinkAlt /> View Certificate
               </div>
             </motion.div>
           ))}

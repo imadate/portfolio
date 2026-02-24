@@ -2,13 +2,14 @@ import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
 import { FaLinkedin, FaGithub, FaEnvelope, FaDownload, FaYoutube } from 'react-icons/fa';
 import './Hero.css';
+import resumePDF from '../../assets/resume/Akshay-Adate.pdf';
 
 const Hero = () => {
   const downloadResume = () => {
     // Create resume download link
     const link = document.createElement('a');
-    link.href = '/resume.pdf'; // You'll need to add your resume PDF
-    link.download = 'Akshay_Adate_Resume.pdf';
+    link.href = resumePDF;
+    link.download = 'Akshay-Adate.pdf';
     link.click();
   };
 
