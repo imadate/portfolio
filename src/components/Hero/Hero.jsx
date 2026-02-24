@@ -3,14 +3,21 @@ import { TypeAnimation } from 'react-type-animation';
 import { FaLinkedin, FaGithub, FaEnvelope, FaDownload, FaYoutube } from 'react-icons/fa';
 import './Hero.css';
 import resumePDF from '../../assets/resume/Akshay-Adate.pdf';
+import { trackDownload, trackSocialClick } from '../../utils/analytics';
 
 const Hero = () => {
   const downloadResume = () => {
+    // Track download
+    trackDownload('Akshay-Adate.pdf');
     // Create resume download link
     const link = document.createElement('a');
     link.href = resumePDF;
     link.download = 'Akshay-Adate.pdf';
     link.click();
+  };
+
+  const handleSocialClick = (platform) => {
+    trackSocialClick(platform);
   };
 
   return (
@@ -119,6 +126,7 @@ const Hero = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="social-link"
+              onClick={() => handleSocialClick('LinkedIn')}
             >
               <FaLinkedin />
             </a>
@@ -127,12 +135,14 @@ const Hero = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="social-link youtube"
+              onClick={() => handleSocialClick('YouTube')}
             >
               <FaYoutube />
             </a>
             <a
               href="mailto:contact.akshayna@gmail.com"
               className="social-link"
+              onClick={() => handleSocialClick('Email')}
             >
               <FaEnvelope />
             </a>

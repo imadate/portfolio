@@ -3,6 +3,7 @@ import { useInView } from 'react-intersection-observer';
 import { FaCertificate, FaAward, FaExternalLinkAlt } from 'react-icons/fa';
 import './Certifications.css';
 import certificatesData from '../../assets/certificates/certificates.json';
+import { trackCertificateView } from '../../utils/analytics';
 
 const Certifications = () => {
   const [ref, inView] = useInView({
@@ -10,8 +11,9 @@ const Certifications = () => {
     threshold: 0.2,
   });
 
-  const handleCertificateClick = (url) => {
-    window.open(url, '_blank', 'noopener,noreferrer');
+  const handleCertificateClick = (cert) => {
+    trackCertificateView(cert.title, cert.issuer);
+    window.open(cert.credentialUrl, '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -40,7 +42,7 @@ const Certifications = () => {
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: index * 0.1, duration: 0.5 }}
               whileHover={{ y: -10 }}
-              onClick={() => handleCertificateClick(cert.credentialUrl)}
+              onClick={() => handleCertificateClick(cert)}
               style={{ cursor: 'pointer' }}
             >
               <div className="cert-icon">
