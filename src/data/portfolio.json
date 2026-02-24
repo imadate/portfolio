@@ -1,0 +1,180 @@
+{
+  "personal": {
+    "name": "Akshay Namdeo Adate",
+    "title": "Senior AI Engineer",
+    "roles": [
+      "Senior AI Engineer",
+      "Full-stack Developer",
+      "GenAI Specialist",
+      "Cloud Architect",
+      "Tech Enthusiast",
+      "Content Creator"
+    ],
+    "email": "contact.akshayna@gmail.com",
+    "phone": "+91 86005 47187",
+    "location": "Bangalore, India",
+    "bio": "Building scalable, cloud-native AI applications with 5+ years of expertise in Node.js, React, Python, and AWS. Passionate about Generative AI, conversational systems, and creating impactful solutions.",
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/adate/",
+      "youtube": "https://www.youtube.com/@AkshayAdate",
+      "github": "https://github.com/imadate",
+      "email": "mailto:contact.akshayna@gmail.com"
+    },
+    "stats": {
+      "experience": "5+",
+      "projects": "50+",
+      "technologies": "10+"
+    }
+  },
+  "about": {
+    "description": "I'm a passionate AI Engineer specializing in Generative AI and full-stack development. With over 5 years of experience, I've been at the forefront of building scalable, cloud-native applications that leverage cutting-edge AI technologies.",
+    "highlights": [
+      {
+        "icon": "🚀",
+        "title": "Innovation-Driven",
+        "description": "Constantly exploring new technologies and implementing cutting-edge solutions in AI and cloud computing."
+      },
+      {
+        "icon": "💡",
+        "title": "Problem Solver",
+        "description": "Expert in breaking down complex challenges into elegant, scalable solutions that deliver real business value."
+      },
+      {
+        "icon": "🤝",
+        "title": "Collaborative Leader",
+        "description": "Strong believer in teamwork, knowledge sharing, and mentoring the next generation of developers."
+      },
+      {
+        "icon": "📈",
+        "title": "Results-Focused",
+        "description": "Committed to delivering high-quality solutions that exceed expectations and drive measurable outcomes."
+      }
+    ]
+  },
+  "skills": {
+    "AI & ML": [
+      { "name": "Generative AI", "level": 95 },
+      { "name": "LLMs & RAG", "level": 90 },
+      { "name": "Machine Learning", "level": 85 },
+      { "name": "NLP", "level": 88 },
+      { "name": "Computer Vision", "level": 80 }
+    ],
+    "Development": [
+      { "name": "React & Node.js", "level": 95 },
+      { "name": "Python", "level": 90 },
+      { "name": "TypeScript", "level": 88 },
+      { "name": "REST APIs", "level": 92 },
+      { "name": "GraphQL", "level": 85 }
+    ],
+    "Cloud & DevOps": [
+      { "name": "AWS", "level": 90 },
+      { "name": "Azure", "level": 85 },
+      { "name": "Docker", "level": 88 },
+      { "name": "Kubernetes", "level": 82 },
+      { "name": "CI/CD", "level": 87 }
+    ],
+    "Databases": [
+      { "name": "MongoDB", "level": 90 },
+      { "name": "PostgreSQL", "level": 85 },
+      { "name": "Redis", "level": 82 },
+      { "name": "Vector DBs", "level": 88 },
+      { "name": "DynamoDB", "level": 85 }
+    ]
+  },
+  "experience": [
+    {
+      "company": "Eli Lilly",
+      "role": "Senior AI Engineer",
+      "period": "2023 - Present",
+      "location": "Bangalore, India",
+      "description": "Leading AI initiatives and building scalable GenAI solutions for enterprise applications.",
+      "achievements": [
+        "Architected and deployed enterprise-scale GenAI solutions serving 10,000+ users",
+        "Built conversational AI systems using RAG and LLM orchestration",
+        "Reduced infrastructure costs by 40% through optimization strategies",
+        "Mentored team of 5 engineers on AI/ML best practices"
+      ],
+      "technologies": ["OpenAI", "AWS Bedrock", "LangChain", "React", "Node.js", "Python"]
+    },
+    {
+      "company": "IBM",
+      "role": "Full-stack AI Developer",
+      "period": "2021 - 2023",
+      "location": "Bangalore, India",
+      "description": "Developed AI-powered applications and cloud-native solutions for global clients.",
+      "achievements": [
+        "Built end-to-end ML pipelines for production deployment",
+        "Implemented microservices architecture handling 1M+ requests/day",
+        "Improved application performance by 60% through optimization",
+        "Led migration of legacy systems to cloud-native architecture"
+      ],
+      "technologies": ["Python", "TensorFlow", "React", "AWS", "Docker", "Kubernetes"]
+    },
+    {
+      "company": "Quantiphi",
+      "role": "AI Engineer",
+      "period": "2019 - 2021",
+      "location": "Mumbai, India",
+      "description": "Developed AI solutions focusing on NLP, computer vision, and cloud deployment.",
+      "achievements": [
+        "Created custom NLP models achieving 95% accuracy",
+        "Built real-time data processing pipelines",
+        "Delivered 15+ AI projects for Fortune 500 clients",
+        "Automated workflows reducing manual effort by 70%"
+      ],
+      "technologies": ["Python", "TensorFlow", "PyTorch", "GCP", "React", "Node.js"]
+    }
+  ],
+  "companies": [
+    {
+      "name": "Eli Lilly",
+      "logo": "Eli_Lilly_and_Company.svg.png",
+      "description": "Current - Leading AI Innovation"
+    },
+    {
+      "name": "IBM",
+      "logo": "IBM_logo.svg.png",
+      "description": "Built Enterprise AI Solutions"
+    },
+    {
+      "name": "Quantiphi",
+      "logo": "Quantiphi_Logo.png",
+      "description": "Developed ML Pipelines"
+    }
+  ],
+  "hobbies": [
+    {
+      "title": "Travel Vlogging",
+      "description": "Creating travel content and sharing adventures on YouTube with thousands of subscribers.",
+      "icon": "✈️",
+      "link": "https://www.youtube.com/@AkshayAdate"
+    },
+    {
+      "title": "Photography",
+      "description": "Capturing moments and landscapes, telling stories through the lens.",
+      "icon": "📸"
+    },
+    {
+      "title": "Tech Blogging",
+      "description": "Writing about AI, development, and sharing knowledge with the tech community.",
+      "icon": "✍️"
+    },
+    {
+      "title": "Gaming",
+      "description": "Exploring virtual worlds and enjoying strategic and adventure games.",
+      "icon": "🎮"
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Computer Applications",
+      "university": "Pune University, Pune, India",
+      "period": "Aug 2017 - May 2020"
+    },
+    {
+      "degree": "Bachelor of Computer Science",
+      "university": "Mumbai University, Mumbai, India",
+      "period": "July 2013 - May 2017"
+    }
+  ]
+}

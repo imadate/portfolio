@@ -1,11 +1,13 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { FaSun, FaMoon, FaBars, FaTimes } from 'react-icons/fa';
+import { Link, useLocation } from 'react-router-dom';
+import { FaSun, FaMoon, FaBars, FaTimes, FaRocket } from 'react-icons/fa';
 import './Header.css';
 
 const Header = ({ darkMode, toggleTheme }) => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,12 +19,13 @@ const Header = ({ darkMode, toggleTheme }) => {
   }, []);
 
   const navItems = [
-    { name: 'Home', href: '#hero' },
-    { name: 'About', href: '#about' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Experience', href: '#experience' },
-    { name: 'Hobbies', href: '#hobbies' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Home', href: '#hero', isRoute: false },
+    { name: 'About', href: '#about', isRoute: false },
+    { name: 'Skills', href: '#skills', isRoute: false },
+    { name: 'Experience', href: '#experience', isRoute: false },
+    // { name: 'Experiments', href: '/experiments', isRoute: true, icon: <FaRocket /> },
+    { name: 'Hobbies', href: '#hobbies', isRoute: false },
+    { name: 'Contact', href: '#contact', isRoute: false },
   ];
 
   return (
@@ -38,27 +41,57 @@ const Header = ({ darkMode, toggleTheme }) => {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          <a href="#hero">
+          <Link to="/">
             <span className="logo-text gradient-text">Akshay Namdeo Adate</span>
             <span className="logo-subtitle">AI Engineer</span>
-          </a>
+          </Link>
         </motion.div>
 
         <nav className={`nav ${mobileMenuOpen ? 'mobile-open' : ''}`}>
-          {navItems.map((item, index) => (
-            <motion.a
-              key={item.name}
-              href={item.href}
-              className="nav-link"
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1 }}
-              whileHover={{ scale: 1.1 }}
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              {item.name}
-            </motion.a>
-          ))}
+          {navItems.map((item, index) => {
+            const content = (
+              <>
+                {item.icon && <span className="nav-icon">{item.icon}</span>}
+                {item.name}
+              </>
+            );
+
+            if (item.isRoute) {
+              return (
+                <motion.div
+                  key={item.name}
+                  className="nav-link"
+                  initial={{ opacity: 0, y: -20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.1 }}
+                  whileHover={{ scale: 1.1 }}
+                >
+                  <Link 
+                    to={item.href} 
+                    onClick={() => setMobileMenuOpen(false)}
+                    className={location.pathname === item.href ? 'active' : ''}
+                  >
+                    {content}
+                  </Link>
+                </motion.div>
+              );
+            }
+
+            return (
+              <motion.a
+                key={item.name}
+                href={item.href}
+                className="nav-link"
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.1 }}
+                whileHover={{ scale: 1.1 }}
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                {content}
+              </motion.a>
+            );
+          })}
         </nav>
 
         <div className="header-actions">

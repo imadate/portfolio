@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
@@ -10,7 +11,24 @@ import Certifications from './components/Certifications/Certifications';
 import Hobbies from './components/Hobbies/Hobbies';
 import Contact from './components/Contact/Contact';
 import ParticlesBackground from './components/ParticlesBackground/ParticlesBackground';
+import Experiments from './pages/Experiments';
 import { trackPageView, trackThemeChange, trackTimeOnPage } from './utils/analytics';
+
+// Main Portfolio Component
+function Portfolio({ darkMode }) {
+  return (
+    <main>
+      <Hero />
+      <About />
+      <Skills />
+      <Experience />
+      <Companies />
+      <Certifications />
+      <Hobbies />
+      <Contact />
+    </main>
+  );
+}
 
 function App() {
   // Initialize darkMode from localStorage, default to false (light mode)
@@ -50,16 +68,10 @@ function App() {
     <div className={`App ${darkMode ? 'dark-mode' : 'light-mode'}`}>
       <ParticlesBackground darkMode={darkMode} />
       <Header darkMode={darkMode} toggleTheme={toggleTheme} />
-      <main>
-        <Hero />
-        <About />
-        <Skills />
-        <Experience />
-        <Companies />
-        <Certifications />
-        <Hobbies />
-        <Contact />
-      </main>
+      <Routes>
+        <Route path="/" element={<Portfolio darkMode={darkMode} />} />
+        <Route path="/experiments" element={<Experiments darkMode={darkMode} />} />
+      </Routes>
     </div>
   );
 }

@@ -1,0 +1,128 @@
+.cosmic-loading-demo {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  background: #000000;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.cosmic-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 10;
+  width: 80%;
+  max-width: 600px;
+}
+
+.cosmic-title {
+  font-size: 56px;
+  font-weight: 900;
+  background: linear-gradient(135deg, #00d9ff, #667eea, #f64f59);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 40px;
+  animation: glow-pulse 2s ease-in-out infinite;
+}
+
+@keyframes glow-pulse {
+  0%, 100% {
+    filter: brightness(1);
+    text-shadow: 0 0 20px rgba(0, 217, 255, 0.5);
+  }
+  50% {
+    filter: brightness(1.3);
+    text-shadow: 0 0 40px rgba(0, 217, 255, 0.8);
+  }
+}
+
+.loading-bar {
+  width: 100%;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.loading-progress {
+  height: 100%;
+  background: linear-gradient(90deg, #00d9ff, #667eea, #f64f59);
+  border-radius: 3px;
+  animation: loading 3s ease-in-out infinite;
+}
+
+@keyframes loading {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 70%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.cosmic-subtitle {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 18px;
+  animation: fade-in-out 2s ease-in-out infinite;
+}
+
+@keyframes fade-in-out {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.css-cosmic-loading {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  background: radial-gradient(ellipse at center, #1a1a3e 0%, #000000 100%);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.css-stars {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.css-star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 3px white;
+  animation: twinkle 3s ease-in-out infinite;
+}
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+}
+
+.fallback-notice {
+  margin-top: 20px;
+  color: #ffaa00;
+  font-size: 14px;
+  font-style: italic;
+}
+
