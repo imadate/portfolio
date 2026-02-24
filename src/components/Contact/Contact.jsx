@@ -171,7 +171,7 @@ const Contact = () => {
                   <div className="window-body">
                     <pre>
 {`const contact = {
-  name: "Akshay Adate",
+  name: "Akshay Namdeo Adate",
   role: "AI Engineer",
   location: "Bangalore",
   experience: "5+ years",
@@ -200,7 +200,7 @@ console.log(contact);`}
           animate={inView ? { opacity: 1 } : {}}
           transition={{ delay: 1 }}
         >
-          <p>© 2026 Akshay Adate. Built with React & Passion 💙</p>
+          <p>© 2026 Akshay Namdeo Adate. Built with React & Passion 💙</p>
         </motion.div>
       </div>
     </section>

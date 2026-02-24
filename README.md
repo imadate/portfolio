@@ -1,4 +1,4 @@
-# 🚀 Akshay Adate - Portfolio Website
+# 🚀 Akshay Namdeo Adate - Portfolio Website
 
 A modern, futuristic portfolio website showcasing my expertise as an AI Engineer and Full-stack Developer.
 
@@ -66,5 +66,5 @@ npm run build
 
 ---
 
-**Made with 💙 by Akshay Adate**
+**Made with 💙 by Akshay Namdeo Adate**
 

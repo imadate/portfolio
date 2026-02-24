@@ -39,7 +39,7 @@ const Header = ({ darkMode, toggleTheme }) => {
           whileTap={{ scale: 0.95 }}
         >
           <a href="#hero">
-            <span className="logo-text gradient-text">Akshay Adate</span>
+            <span className="logo-text gradient-text">Akshay Namdeo Adate</span>
             <span className="logo-subtitle">AI Engineer</span>
           </a>
         </motion.div>
